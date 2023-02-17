@@ -1,0 +1,75 @@
+.navContainer {
+  display: flex;
+
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #080808;
+  padding: 20px;
+  color: #e5e7eb;
+}
+
+.NavBar {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 2s;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.logoContainer:hover {
+  opacity: 0.8;
+  font-size: 70px;
+}
+
+.logoC {
+  font-size: 48px;
+  color: #E5455B;
+  font-weight: bold;
+  text-shadow: -2px 4px 0 white;
+  font-family: "Roboto", sans-serif;
+}
+.logoA {
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: -2px 4px 0 #E5455B;
+  font-family: "Roboto", sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+ul li:hover {
+  color: #FF667B;
+}
+ul li.active {
+  color: #E5455B;
+  
+}
+
+.navOptionsContainer ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 20px;
+}
+
+.navInput {
+  border: 0;
+  border-radius: 0.25rem;
+}
+
+.fade {
+  opacity: 1;
+}
