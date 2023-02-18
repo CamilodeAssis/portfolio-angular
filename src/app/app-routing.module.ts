@@ -5,12 +5,13 @@ import { ContatoComponent } from './contato/contato.component';
 import { ProjetoDetalhesComponent } from './projetos/projeto-detalhes/projeto-detalhes.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { QualificacoesComponent } from './qualificacoes/qualificacoes.component';
+import { HomeComponent } from './home/home.component';
 import { SobreComponent } from './sobre/sobre.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: SobreComponent 
+    component: HomeComponent 
   },
   {
     path: 'sobre',

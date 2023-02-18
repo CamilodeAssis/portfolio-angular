@@ -1,0 +1,13 @@
+#btn-container button{ 
+    background-color: #E5455B;
+    width: 132px;
+    font-size:20px;
+    color: white;
+    border-radius: 0.25rem;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#btn-container button:hover{
+  background-color: #FF667B;
+}

@@ -1,1 +1,16 @@
-<p>projetos works!</p>
+<section class="section-container">
+  <div class="title-container">
+    <h1>Meus Projetos</h1>
+    <h2>Veja um pouco do meu conhecimento aplicado em projetos práticos.</h2>
+  </div>
+  <div class="projetos-container">
+    <div class="grid-container">
+      <div class="grid-item" *ngFor="let item of projetos">
+        <img [src]="item.img" alt="" width="100%" />
+      </div>
+    </div>
+  </div>
+  <div>
+    
+  </div>
+</section>
