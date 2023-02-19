@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { ContatoComponent } from './contato/contato.component';
-import { ProjetoDetalhesComponent } from './projetos/projeto-detalhes/projeto-detalhes.component';
-import { ProjetosComponent } from './projetos/projetos.component';
-import { QualificacoesComponent } from './qualificacoes/qualificacoes.component';
-import { HomeComponent } from './home/home.component';
-import { SobreComponent } from './sobre/sobre.component';
+import { ContatoComponent } from './components/contato/contato.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProjetosComponent } from './components/projetos/projetos.component';
+import { QualificacoesComponent } from './components/qualificacoes/qualificacoes.component';
+import { SobreComponent } from './components/sobre/sobre.component';
+
 
 const routes: Routes = [
   {
@@ -22,10 +22,6 @@ const routes: Routes = [
     component: ProjetosComponent 
   },
   {
-    path: 'projeto/:name',
-    component: ProjetoDetalhesComponent 
-  },
-  {
     path: 'qualificações',
     component: QualificacoesComponent 
   },
@@ -39,4 +35,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+  
+}

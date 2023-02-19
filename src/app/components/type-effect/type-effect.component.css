@@ -1,0 +1,18 @@
+p {
+  font-family: monospace;
+  font-size: 2em;
+  color: #e5e7eb;
+}
+
+p span {
+  font-weight: bold;
+  color: #e5455b;
+  border-right: 0.3rem solid #e5455b;
+  animation: cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}

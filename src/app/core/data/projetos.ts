@@ -16,7 +16,7 @@ export class DataProjetos {
         'assets/images/svg/react.svg',
         'assets/images/svg/typescript.svg',
         'assets/images/svg/tailwind.svg',
-        'assets/images/svg/node.svg',
+        'assets/images/svg/nodejs.svg',
         'assets/images/svg/mysql.svg',
       ],
       link: 'https://github.com/CamilodeAssis/Smart-Store-1.0',
@@ -74,7 +74,7 @@ export class DataProjetos {
       link: 'https://github.com/CamilodeAssis/Projeto-loja-com-carrinho-de-compras-Javascript-',
     },
     {
-      name: 'Urna eletrônica Javascript',
+      name: 'Urna eletrônica',
       description:
         'Simulador da urna eletrônica desenvolvido com Javascript, HTML e CSS',
       type: 'Javascript',

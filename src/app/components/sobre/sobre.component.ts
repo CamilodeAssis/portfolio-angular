@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class SobreComponent {
   imgSrc: string = '/assets/images/eu1.png';
+
+  isLoaded = false;
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.isLoaded = true;
+    }, 100);
+  }
 }

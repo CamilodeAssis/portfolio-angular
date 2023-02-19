@@ -1,0 +1,42 @@
+<section class="section-container">
+  <div class="home-container" [ngClass]="{ fade: isLoaded }">
+    <div>
+      <h2>Olá, seja muito bem vindo(a)!</h2>
+      <h1>Meu nome é Camilo</h1>
+
+      <app-type-effect></app-type-effect>
+
+      <div id="btn-container">
+        <button>
+          <fa-icon [icon]="faGithub"></fa-icon>
+          Github
+        </button>
+        <button>
+          <fa-icon [icon]="faLinkedin"></fa-icon>
+          Linkedin
+        </button>
+      </div>
+    </div>
+
+    <img [src]="srcImg" alt="Camilo de Assis" width="30%" />
+
+    <div id="side-socials">
+      <div class="barra" [ngClass]="{ 'slide-t-to-b': isLoaded }"></div>
+      <div class="side-text" [ngClass]="{ 'slide-r-to-l': isLoaded }">
+        FOLLOW ME
+      </div>
+      <div class="barra" [ngClass]="{ 'slide-t-to-b': isLoaded }"></div>
+      <div class="triangulo-t" [ngClass]="{ 'slide-t-to-b': isLoaded }"></div>
+
+      <a href="" [ngClass]="{ 'slide-icon': isLoaded }">
+        <fa-icon [icon]="faInstagram" ></fa-icon>
+      </a>
+      <a href="" [ngClass]="{ 'slide-icon': isLoaded }">
+        <fa-icon [icon]="faFacebook"></fa-icon>
+      </a>
+
+      <div class="triangulo-b" [ngClass]="{ 'slide-b-to-t': isLoaded }"></div>
+      <div class="triangulo-b" [ngClass]="{ 'slide-b-to-t': isLoaded }"></div>
+    </div>
+  </div>
+</section>

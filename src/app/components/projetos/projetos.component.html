@@ -1,0 +1,23 @@
+<section class="section-container">
+  <div class="title-container" [ngClass]="{ fade: isLoaded }">
+    <h1>Meus Projetos</h1>
+    <h2>Veja um pouco do meu conhecimento aplicado em projetos práticos.</h2>
+  </div>
+  <div class="projetos-container" [ngClass]="{ fade: isLoaded }">
+    <div class="grid-container">
+      <projetos-card
+        class="grid-item"
+        *ngFor="let item of projetos"
+        [name]="item.name"
+        [description]="item.description"
+        [type]="item.type"
+        [img]="item.img"
+        [icons]="item.icons"
+        [link]="item.link"
+      ></projetos-card>
+    </div>
+    <a href="https://github.com/CamilodeAssis?tab=repositories" target="_blank">
+      <button>Vejas todos</button>
+    </a>
+  </div>
+</section>

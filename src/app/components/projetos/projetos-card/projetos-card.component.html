@@ -1,0 +1,12 @@
+<div class="item" [style.backgroundImage]="'url(' + img + ')'">
+  <div class="overlay" [style.opacity]="isMouseOver ? 0.8 : 0"></div>
+  <div class="projeto-info" [style.display]="isMouseOver ? 'block' : 'none'">
+    <div class="icons-container-row">
+      <img *ngFor="let icon of icons" [src]="icon" alt="" />
+    </div>
+    <h2>{{ name }}</h2>
+    <a [href]="link" target="_blank">
+    <button>Saiba mais</button>
+    </a>
+  </div>
+</div>

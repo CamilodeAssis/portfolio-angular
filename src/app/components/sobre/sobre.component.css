@@ -1,4 +1,5 @@
 .section-container {
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,28 +8,44 @@
   height: 100vh;
   width: 100%;
   background-color: #080808;
+ 
 }
+
+
+
 .title-container {
-  margin-bottom: 100px;
-  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 4rem;
+  background-color: #e5455b;
+
 }
 
 .title-container h1 {
-  font-size: 40px;
-  color: #e5455b;
+  font-size: 2em;
+  color: white;
 }
 
 .title-container h2 {
+  font-size: 1em;
   font-weight: normal;
   color: #e5e7eb;
 }
 
 .sobre-container {
   display: flex;
+  padding: 60px;
   width: 80%;
-  gap: 40px;
   justify-content: space-around;
   align-items: center;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 2s;
+  border: 1px solid #e5455b;
+  border-radius: 0 0 0.25rem 0.25rem ;
 }
 .sobre-container div {
   display: flex;
@@ -46,13 +63,18 @@ h3 {
   font-size: 38px;
 }
 .sobre-container p {
+  width: 90%;
   text-align: center;
   color: #e5e7eb;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .sobre-container img {
-  width: 30%;
+  width: 20%;
+}
+
+.fade {
+  opacity: 1;
 }
 
 @media (max-width: 1024px) {
@@ -62,6 +84,7 @@ h3 {
   }
   .sobre-container {
     flex-direction: column;
+    gap: 40px
   }
 
   .title-container {
@@ -71,4 +94,9 @@ h3 {
   .sobre-container p {
     font-size: 16px;
   }
+
+  .sobre-container img {
+    width: 30%;
+  }
 }
+
