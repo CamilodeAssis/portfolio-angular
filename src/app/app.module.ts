@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +17,9 @@ import { ContatoComponent } from './components/contato/contato.component';
 import { QualificacoesComponent } from './components/qualificacoes/qualificacoes.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { TypeEffectComponent } from './components/type-effect/type-effect.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { SkillCardComponent } from './components/skills/skill-card/skill-card.component';
+
 
 
 
@@ -32,6 +37,8 @@ import { TypeEffectComponent } from './components/type-effect/type-effect.compon
     SobreComponent,
     FooterComponent,
     TypeEffectComponent,
+    SkillsComponent,
+    SkillCardComponent
 
 
 
@@ -42,6 +49,7 @@ import { TypeEffectComponent } from './components/type-effect/type-effect.compon
     CoreModule,
     FontAwesomeModule,
     ProjetosModule,
+    BrowserAnimationsModule
 
     
   ],

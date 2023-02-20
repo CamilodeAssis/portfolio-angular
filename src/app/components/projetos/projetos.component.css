@@ -4,9 +4,9 @@
   align-items: center;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  background-color: #080808;
+  background-color: #0f0f0f;
   gap: 60px;
   padding: 20px 0  40px 0;
 }
@@ -70,8 +70,6 @@
   display: flex;
   width: 300px;
   height: 300px;
-  
-  
 }
 
 .fade {
@@ -88,5 +86,45 @@
   }
   .projetos-container {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px
+  
+  }
+  
+  .grid-item{
+    display: flex;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .title-container {
+    padding: 10px;
+    
+  }
+  .title-container h1{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px
+  
+  }
+  
+  .grid-item{
+    display: flex;
+    width: 300px;
+    height: 300px;
   }
 }

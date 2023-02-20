@@ -5,36 +5,40 @@ import { ContatoComponent } from './components/contato/contato.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { QualificacoesComponent } from './components/qualificacoes/qualificacoes.component';
-import { SobreComponent } from './components/sobre/sobre.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
+import { SobreComponent } from './components/sobre/sobre.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent 
+    component: HomeComponent,
   },
   {
     path: 'sobre',
-    component: SobreComponent
+    component: SobreComponent,
   },
   {
+    path: 'skills',
+    component: SkillsComponent,
+  },
+
+  {
     path: 'projetos',
-    component: ProjetosComponent 
+    component: ProjetosComponent,
   },
   {
     path: 'qualificações',
-    component: QualificacoesComponent 
+    component: QualificacoesComponent,
   },
   {
     path: 'contato',
-    component: ContatoComponent 
+    component: ContatoComponent,
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { 
-  
-}
+export class AppRoutingModule {}

@@ -1,0 +1,45 @@
+<section class="section-container height-mobile">
+  <div>
+    <div class="op" [ngClass]="{ fade: isLoaded }">
+    <h1 >Minhas Skills</h1>
+    </div>  
+    <div class="icons-container" [ngClass]="{ fade: isLoaded }">
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
+      />
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"
+      />
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+      />
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+      />
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+      />
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
+      />
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+      />
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+      />
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
+      />
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg"
+      />
+    </div>
+    
+  </div>
+  <div class="content-container" [ngClass]="{ fade: isLoaded }">
+    <skill-card [data]="dataBack" skill="BackEnd Skils" [icone]="faDatabase"> </skill-card>
+    <skill-card [data]="front" skill="FrontEnd Skills" [icone]="faFileCode"> </skill-card>
+    <skill-card [data]="soft" skill="Soft Skills" [icone]="faLightbulb"> </skill-card>
+  </div>
+</section>

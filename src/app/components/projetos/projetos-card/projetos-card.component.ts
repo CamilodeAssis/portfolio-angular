@@ -6,6 +6,8 @@ import { Component, HostBinding, HostListener, Input} from '@angular/core';
   styleUrls: ['./projetos-card.component.css']
 })
 export class ProjetosCardComponent {
+ 
+
     isMouseOver: boolean = false;
 
    @Input() name!: string;

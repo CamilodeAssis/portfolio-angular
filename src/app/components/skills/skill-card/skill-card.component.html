@@ -1,0 +1,16 @@
+<div (click)="setIsLoaded()" class="skill-card"><fa-icon [icon]="icone"> </fa-icon> {{ skill }} <fa-icon [icon]="faChevronDown"> </fa-icon> </div>
+<div
+  [style.display]="isLoaded ? 'block' : 'none'"
+  class="skill-container"
+  [@slideInOut]="isLoaded ? 'in' : 'out'"
+>
+  <div  *ngFor="let item of data">
+    <div class="porcent-flex">
+      <h2>{{ item.name }}</h2>
+      <h3>{{ item.porcent }}</h3>
+    </div>
+    <div class="porcent-container">
+      <div class="porcent" [style.width]="item.porcent"></div>
+    </div>
+  </div>
+</div>

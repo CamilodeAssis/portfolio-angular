@@ -1,0 +1,93 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100%;
+  gap: 100px;
+  background-color: #0f0f0f;
+  padding-top: 100px;
+}
+
+.section-container h1 {
+  margin-bottom: 100px;
+  color: #e5455b;
+  font-size: 2.5rem;
+  text-align: center;
+ 
+  
+}
+.op{
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 2s;
+}
+
+.skill-card{
+  width: 100%;
+}
+
+.icons-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 2s;
+}
+
+.icons-container img{
+   width: 40px;
+   height: 40px;
+
+}
+
+
+.content-container {
+  display: flex;
+  width: 80%;
+  height: auto;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 2s;
+}
+
+.fade{
+  opacity: 1;
+
+}
+
+
+@media (max-width: 1440px){
+  .content-container {
+   flex-direction: column;
+
+  }
+  .height-mobile{
+    height: 1500px;
+  }
+
+  .section-container{
+
+  }
+}
+
+@media (max-width: 425px){
+  .icons-container{
+    gap: 2px;
+  }
+  
+  .icons-container img{
+     width: 28px;
+     height: 28px;
+  
+  }
+}

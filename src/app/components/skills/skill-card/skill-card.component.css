@@ -1,0 +1,97 @@
+.skill-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 420px;;
+    height: 50px;
+    align-items: center;
+    background-color: #e5455b;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+
+  .skill-container{
+    position: absolute;
+    justify-content: center;
+    width: 420px;
+    height: 260px;
+    align-items: center;
+    border: 1px solid #e5455b;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .porcent-container {
+    width: 100%;
+    height: 8px;
+    background-color: white;
+  }
+  
+  .porcent {
+    width: 0;
+    height: 8px;
+    background-color: #e5455b;
+    transition: width 0.5s ease-in-out;
+  }
+
+  .porcent-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+ 
+
+  .skill-container {
+    overflow: hidden;
+  }
+  
+  .skill-container.ng-enter,
+  .skill-container.ng-leave {
+    transition: all 0.5s ease-out;
+  }
+  
+  .skill-container.ng-enter {
+    transform: translateY(-100%);
+  }
+  
+  .skill-container.ng-enter-active {
+    transform: translateY(0%);
+  }
+  
+  .skill-container.ng-leave {
+    transform: translateY(0%);
+  }
+  
+  .skill-container.ng-leave-active {
+    transform: translateY(100%);
+  }
+
+
+  @media (max-width: 1440px){
+   
+    .skill-card{
+      position: initial;
+      
+    }
+  
+    .skill-container{
+      position: initial;
+     
+    }
+  }
+
+  @media (max-width: 425px) {
+    .skill-card{
+      width:300px;
+      
+    }
+  
+    .skill-container{
+      width:300px;
+     
+    }
+  }

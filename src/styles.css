@@ -2,7 +2,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    border: 0;
     box-sizing: border-box; 
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }

@@ -1,1 +1,20 @@
-<p>qualificacoes works!</p>
+<section class="section-container ">
+    
+    <div class="content-container" [ngClass]="{ fade: isLoaded }" >
+        <h1>Qualificações</h1>
+        <div class="grid-container" >
+            <div class="grid-item" *ngFor="let item of quali">
+                <h1>
+                    {{item.name}}
+                </h1>
+                <h2>
+                    {{item.escola}}
+                </h2>
+                <h3>
+                    {{item.data}}
+                </h3>
+            </div>
+        </div>
+    </div>
+</section>
+  
