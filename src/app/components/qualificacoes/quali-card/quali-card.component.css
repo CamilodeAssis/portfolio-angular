@@ -109,6 +109,23 @@
   background-color: white;
 }
 
+@media (max-height: 723px){
+  .quali-card h1 {
+    font-size:0.8em;
+  }
+  .quali-card h3 {
+    font-size:0.8em;
+  }
+  .bola {
+    width: 12px;
+    height: 12px;
+  }
+  .barra {
+    width: 2px;
+    height: 40px;
+  }
+}
+
 @media (max-width: 425px) {
   .detalhes-container {
     width: 300px;
