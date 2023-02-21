@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'; 
+import { faBars, faXmark, IconDefinition } from '@fortawesome/free-solid-svg-icons'; 
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,9 +8,9 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
-  faBars = faBars;
-  isLoaded = false;
-  faXmark = faXmark;
+  faBars: IconDefinition = faBars;
+  isLoaded: boolean = false;
+  faXmark: IconDefinition = faXmark;
   
 
   ngOnInit(): void {

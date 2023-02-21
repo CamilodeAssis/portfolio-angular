@@ -8,6 +8,10 @@
   background-color: #0f0f0f;
   padding: 40px;
 }
+
+.opacity-section{
+  opacity: 0.8;
+}
 #titulo-section {
   font-size: 1.5em;
   color: #e5455b;
@@ -48,6 +52,8 @@
   font-size: 1em;
 }
 
+
+
 app-quali-card {
   position: absolute;
   display: flex;
@@ -86,6 +92,8 @@ app-quali-card {
   border-top: 0.5rem solid #e5455b;
   translate: -260px 0px;
 }
+
+
 
 .fade {
   opacity: 1;

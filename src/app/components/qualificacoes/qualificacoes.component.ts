@@ -26,7 +26,9 @@ export class QualificacoesComponent {
 
   isLoaded: boolean = false;
 
-  name: string = 'Qualificacões';
+  name: string = 'Minhas Qualificações e Experiências';
+  desc: string = '';
+  isClicked: boolean = false;
 
   setIsQuali(){
     this.isExp = false;
@@ -37,6 +39,9 @@ export class QualificacoesComponent {
     this.isExp = !this.isExp;
   }
 
+  setIsClicked(){
+    this.isClicked = !this.isClicked;
+  }
 
   ngOnInit() {
     this.quali = dataQuali;
@@ -46,9 +51,15 @@ export class QualificacoesComponent {
     }, 100);
 
   }
+  onSelectedDesc(option: string) {
+    console.log(option);
+    this.desc = option;
+    
+}
 
-  cardClicado(dado: Quali) {
-      this.name = dado.type
-      console.log(dado);
+  onSelectedOption(option: string) {
+    this.name = option;
   }
+
+
 }

@@ -3,6 +3,7 @@ export interface Quali {
   lugar: string;
   data: string;
   type: string;
+  desc: string;
 }
 
 export interface Exp {
@@ -10,6 +11,7 @@ export interface Exp {
   lugar: string;
   data: string;
   type: string;
+  desc: string;
 }
 
 

@@ -22,6 +22,7 @@ import { QualiCardComponent } from './components/qualificacoes/quali-card/quali-
 import { ContatoComponent } from './components/contato/contato.component';
 import { FormDebugComponent } from './components/contato/form-debug/form-debug.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PaginaNaoEncontradaComponent } from './components/pagina-nao-encontrada/pagina-nao-encontrada.component';
 
 
 
@@ -39,7 +40,8 @@ import { HttpClientModule } from '@angular/common/http';
     SkillCardComponent,
     QualiCardComponent,
     ContatoComponent,
-    FormDebugComponent
+    FormDebugComponent,
+    PaginaNaoEncontradaComponent
 
   ],
   imports: [

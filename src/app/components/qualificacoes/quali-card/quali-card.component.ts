@@ -1,25 +1,50 @@
-
-import { Component, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  Input,
+  Output,
+  EventEmitter,
+  SimpleChanges,
+} from '@angular/core';
 import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 import { Quali } from 'src/app/core/types/dataQualiType';
 
 @Component({
   selector: 'app-quali-card',
   templateUrl: './quali-card.component.html',
-  styleUrls: ['./quali-card.component.css']
+  styleUrls: ['./quali-card.component.css'],
 })
 export class QualiCardComponent {
-  name: string = ''
+  @Input() data!: Quali[];
+  @Input() iconSchoolOrWork!: IconDefinition;
+  @Input() iconCalendar!: IconDefinition;
 
-  @Input() data!: Quali[]
-  @Input() iconSchoolOrWork!: IconDefinition
-  @Input() iconCalendar!: IconDefinition
+  selected: string = 'Minhas Qualificações e Experiências';
+  option: string = '';
+  isClicked: boolean = false;
+  @Output() selectedOption = new EventEmitter<string>();
+  @Output() descOption = new EventEmitter<string>();
 
-  @Output() cardClicado = new EventEmitter<Quali>();
-
-  
-  emitirEvento(dado: Quali) {
-    this.cardClicado.emit(dado);
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['data']) {
+      const dataChange = changes['data'];
+      const currentData = dataChange.currentValue;
+      const previousData = dataChange.previousValue;
+      this.selectedOption.emit(this.selected);
+      this.descOption.emit(this.option);
+    }
   }
- 
+
+  setIsClick() {
+    this.isClicked = !this.isClicked;
+  }
+
+  onDesc(option: string) {
+    this.option = option;
+    this.descOption.emit(option);
+  }
+
+  onSelected(option: string) {
+    this.selected = option;
+    this.selectedOption.emit(option);
+  }
 }

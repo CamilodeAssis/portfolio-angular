@@ -24,15 +24,15 @@ export class DataProjetos {
     {
       name: 'Portfólio pessoal v2.0',
       description:
-        'Portfólio pessoal desenvolvido com ReactJs, Typescript e TailwindCSS.',
+        'Portfólio pessoal desenvolvido com Angular, Typescript e CSS.',
       type: 'React',
       img: 'assets/images/projects/portfolio2.png',
       icons: [
-        'assets/images/svg/react.svg',
         'assets/images/svg/typescript.svg',
-        'assets/images/svg/tailwind.svg',
+        'assets/images/svg/angular.svg',
+        'assets/images/svg/css.svg',
       ],
-      link: 'https://github.com/CamilodeAssis/personal-portfolio-2.0',
+      link: 'https://github.com/CamilodeAssis/portfolio-angular',
     },
     {
       name: 'Jogo da memória',

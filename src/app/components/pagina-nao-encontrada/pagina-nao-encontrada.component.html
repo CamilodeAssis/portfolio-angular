@@ -1,0 +1,49 @@
+<style>
+  section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #0f0f0f;
+    justify-content: center;
+    align-items: center;
+  }
+  section div {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  section h1 {
+    color: white;
+    font-size: 5em;
+  }
+
+  section h2 {
+    color: #e5455b;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1440px) {
+    section h1 {
+      font-size: 2em;
+    }
+  }
+  @media (max-width: 425px) {
+    section h1 {
+      font-size: 1.5em;
+      
+    }
+    section h2 {
+    font-size: 1em;
+  }
+  }
+</style>
+
+<section>
+  <div>
+    <h1>Página nao encontrada!</h1>
+    <h2 routerLink="/home">Voltar a página principal</h2>
+  </div>
+</section>

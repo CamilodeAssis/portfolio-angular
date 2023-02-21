@@ -1,50 +1,144 @@
-.side-container{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  .quali-card{
-    display: flex;
-    height: auto;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;   
-  }
-  
+.side-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
-  .info-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.quali-card {
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.quali-card button {
+  border: none;
+  padding: 10px;
+  border-radius: 0.25rem;
+  font-size: 1em;
+  position: absolute;
+  transform: translate(420px, 20px);
+  background-color: #e5455b;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.quali-card button:hover {
+  background-color: #ff667b;
+  padding: 12px;
+}
+
+.detalhes-container {
+  display: flex !important;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: auto;
+  border-radius: 0.25rem;
+  background-color: white;
+  gap: 30px;
+  padding: 20px;
+}
+
+.detalhes-container h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #e5455b;
+  margin-bottom: 30px;
+}
+.detalhes-container p {
+  text-align: justify;
+  font-size: 1.3em;
+}
+.detalhes-container button {
+  background-color: #e5455b;
+  color: white;
+  width: 10rem;
+  padding: 10px;
+  border: 0;
+  font-size: 1.5em;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.detalhes-container button:hover {
+  opacity: 0.8;
+}
+
+.detalhes-hidden {
+  display: none;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info-container h1 {
+  font-size: 1em;
+  color: #e5455b;
+  line-height: 0.9;
+}
+.info-container h3 {
+  font-size: 0.8em;
+  color: #e5e7eb;
+}
+
+.bola {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #e5455b;
+  box-shadow: 0 0 20px #e5455b;
+}
+.barra {
+  width: 4px;
+  height: 55px;
+  background-color: white;
+}
+
+@media (max-width: 425px) {
+  .detalhes-container {
+    width: 300px;
   }
-  .info-container h1 {
-    font-size: 1em;
-    color: #E5455B;
-    line-height: 0.9;
-  }
-  .info-container h3 {
+
+  .quali-card button {
+    padding: 4px;
     font-size: 0.8em;
-    color: #e5e7eb;
+    transform: translate(220px, 55px);
   }
 
-  .bola {
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    background-color: #E5455B;
-    box-shadow: 0 0 20px #E5455B;
+  .detalhes-container h1 {
+
+    font-size: 1.5em;
+    margin-bottom: 10px;
   }
-  .barra {
-    width: 4px;
-    height: 55px;
-    background-color: white;
+  .detalhes-container p {
+
+    font-size: 1em;
+
+  }
+  .detalhes-container button {
+    width: 8rem;
+    padding: 4px;
+    font-size: 1em;
+
   }
 
-
-  @media (min-width: 425px) {
-   
+  .quali-card button:hover {
+    background-color: #ff667b;
+    padding: 5px;
   }
+}

@@ -25,10 +25,7 @@
   align-items: center;
   cursor: pointer;
 }
-.logoContainer:hover {
-  opacity: 0.8;
-  font-size: 70px;
-}
+
 
 .logoC {
   font-size: 48px;

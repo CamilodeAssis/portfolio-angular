@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import { Subscription } from 'rxjs';
 
 import {
   faLinkedin,
@@ -32,6 +33,8 @@ export class ContatoComponent {
 
   formulario!: FormGroup;
 
+  private httpSubscription!: Subscription;
+
   map = map;
   constructor(private http: HttpClient) {}
 
@@ -48,7 +51,10 @@ export class ContatoComponent {
 
 
   onSubmit() {
-    this.http
+    if (this.httpSubscription) {
+      this.httpSubscription.unsubscribe();
+    }
+    this.httpSubscription = this.http
       .post(
         'https://63f4099d864fb1d60020fc4c.mockapi.io/api/desafioFrontend/senEmail',
         JSON.stringify(this.formulario.value)
@@ -56,4 +62,12 @@ export class ContatoComponent {
       .pipe(map((res: any) => res))
       .subscribe((dados: any) => console.log(dados));
   }
+
+
+  ngOnDestroy() {
+    if (this.httpSubscription) {
+      this.httpSubscription.unsubscribe();
+    }
+  }
+  
 }

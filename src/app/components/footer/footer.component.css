@@ -4,6 +4,7 @@
     background-color: #E5455B;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     color: #ffffff;
 }

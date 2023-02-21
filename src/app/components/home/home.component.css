@@ -9,6 +9,7 @@
   width: 100%;
   background-color: #0f0f0f;
   gap: 50px;
+  padding: 60px 0 60px 0;
 }
 
 a {
@@ -103,8 +104,12 @@ p {
   padding: 10px 0 10px 0;
   cursor: pointer;
   border: none;
-  transition: all 0.5s;
+
   gap: 4px;
+  opacity: 0;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1.5s;
+ 
 }
 
 .btn-curriculo:hover{
@@ -225,7 +230,7 @@ p {
 
 @media (max-width: 768px){
   .section-container{
-    height: 100vh;
+
   }
   .home-container h2 {
     font-size: 1.5em;
@@ -293,6 +298,10 @@ p {
 
 
 @media (max-width: 1024px ){
+  .section-container{
+
+    height: auto;
+  }
 
   .side-text {
     font-size: 0.8rem;
@@ -305,7 +314,7 @@ p {
 @media (max-width: 425px){
   .section-container{
     justify-content: flex-start;
-    padding-top: 60px;
+    padding: 60px 0 60px 0;
     gap: 60px;
   }
 
@@ -320,7 +329,6 @@ p {
   }
 
   #side-socials fa-icon {
-    
     font-size: 1.5em;
     
   }
@@ -339,13 +347,13 @@ p {
     font-size: 2em;
   }
 
-  .icons-container{
+  #icons-container{
 
     gap: 2px;
   
   }
   
-  .icons-container img{
+  #icons-container img{
      width: 28px;
      height: 28px;
   

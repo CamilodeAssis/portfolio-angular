@@ -76,5 +76,5 @@
       <div class="triangulo-b" [ngClass]="{ 'slide-b-to-t': isLoaded }"></div>
     </div>
   </div>
-  <a [href]="sanitizer.bypassSecurityTrustUrl(pdfUrl)" target="_blank"><button class="btn-curriculo"> <fa-icon [icon]="faDownload"></fa-icon>  Baixar CV</button></a>
+  <a [href]="sanitizer.bypassSecurityTrustUrl(pdfUrl)" target="_blank"><button class="btn-curriculo" [ngClass]="{ fade: isLoaded }">  <fa-icon [icon]="faDownload"></fa-icon>  Baixar CV</button></a>
 </section>

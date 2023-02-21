@@ -1,13 +1,26 @@
-<div *ngFor="let item of data" class="quali-card"  >
-    <div class="side-container">
-        <div class="bola">
-        </div>
-        <div class="barra">
-        </div>
-    </div> 
-    <div class="info-container">
-        <h1 (ngModelChange)="emitirEvento(data[0])" >{{item.name}}</h1>
-        <h3> <fa-icon [icon]="iconSchoolOrWork"></fa-icon> {{item.lugar}} </h3>
-        <h3> <fa-icon [icon]="iconCalendar"></fa-icon> {{item.data}} </h3>
+
+  <div
+    *ngFor="let item of data"
+  >
+    <div class="quali-card" (click)="onSelected('Descrição da '+item.type +' selecionada: ' + item.name); setIsClick(); onDesc(item.desc) ">
+      <div class="side-container">
+        <div class="bola"></div>
+        <div class="barra"></div>
+      </div>
+      <div class="info-container">
+        <h1>{{ item.name }}</h1>
+        <h3><fa-icon [icon]="iconSchoolOrWork"></fa-icon> {{ item.lugar }}</h3>
+        <h3><fa-icon [icon]="iconCalendar"></fa-icon> {{ item.data }}</h3>
+      </div>
+      <button>Detalhes</button>
     </div>
+    
+  </div>
+  <div class="detalhes-hidden" [ngClass]="{'detalhes-container': isClicked}">
+    <div  class="detalhes-card">
+        <h1>Detalhes</h1>
+        <p>{{option}}</p>
+    </div>
+   <button (click)="setIsClick(); onSelected('Minhas Qualificações e Experiências'); "> fechar </button>
 </div>
+

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ContatoComponent } from './components/contato/contato.component';
 import { HomeComponent } from './components/home/home.component';
+import { PaginaNaoEncontradaComponent } from './components/pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { QualificacoesComponent } from './components/qualificacoes/qualificacoes.component';
 import { SkillsComponent } from './components/skills/skills.component';
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'contato',
     component: ContatoComponent,
+  },
+  {
+    path: '**',
+    component: PaginaNaoEncontradaComponent,
   },
 ];
 
