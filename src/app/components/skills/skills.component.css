@@ -47,6 +47,7 @@
 }
 
 
+
 .content-container {
   display: flex;
   width: 80%;
@@ -60,6 +61,7 @@
   transition-duration: 2s;
 }
 
+
 .fade{
   opacity: 1;
 
@@ -72,7 +74,7 @@
 
   }
   .height-mobile{
-    height: 1500px;
+    height: 1600px;
   }
 
   .section-container{

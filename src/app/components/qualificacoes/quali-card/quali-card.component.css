@@ -1,0 +1,50 @@
+.side-container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .quali-card{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;   
+  }
+  
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .info-container h1 {
+    font-size: 1em;
+    color: #E5455B;
+    line-height: 0.9;
+  }
+  .info-container h3 {
+    font-size: 0.8em;
+    color: #e5e7eb;
+  }
+
+  .bola {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #E5455B;
+    box-shadow: 0 0 20px #E5455B;
+  }
+  .barra {
+    width: 4px;
+    height: 55px;
+    background-color: white;
+  }
+
+
+  @media (min-width: 425px) {
+   
+  }

@@ -1,3 +1,5 @@
+
+
 .section-container {
   display: flex;
   flex-direction: column;
@@ -6,7 +8,12 @@
   height: 100vh;
   width: 100%;
   background-color: #0f0f0f;
-  gap: 100px;
+  gap: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: none;
 }
 #btn-container {
   width: 100%;
@@ -16,22 +23,18 @@
   flex-direction: row;
 
 }
-.icons-container{
+#icons-container{
+  width: 100%;
+  height: 50px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 6px;
-  opacity: 0;
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 2s;
-
 }
 
-.icons-container img{
-   width: 40px;
-   height: 40px;
-
+#icons-container img{
+    width: 30px;
+    height: 30px;
 }
 
 .home-container {
@@ -84,6 +87,30 @@ p {
   cursor: pointer;
   border: none;
   transition: all 0.5s;
+  gap: 4px;
+}
+
+.btn-curriculo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5455b;
+  width: 15rem;
+  height: 2.5rem;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 0.25rem;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s;
+  gap: 4px;
+}
+
+.btn-curriculo:hover{
+  background-color: #ff667b;
+  width: 17rem;
+
 }
 
 #btn-container button:hover {

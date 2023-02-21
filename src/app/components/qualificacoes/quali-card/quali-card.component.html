@@ -1,0 +1,13 @@
+<div *ngFor="let item of data" class="quali-card"  >
+    <div class="side-container">
+        <div class="bola">
+        </div>
+        <div class="barra">
+        </div>
+    </div> 
+    <div class="info-container">
+        <h1 (ngModelChange)="emitirEvento(data[0])" >{{item.name}}</h1>
+        <h3> <fa-icon [icon]="iconSchoolOrWork"></fa-icon> {{item.lugar}} </h3>
+        <h3> <fa-icon [icon]="iconCalendar"></fa-icon> {{item.data}} </h3>
+    </div>
+</div>

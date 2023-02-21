@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,16 +13,15 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { ProjetosModule } from './components/projetos/projetos.module';
-import { ContatoComponent } from './components/contato/contato.component';
 import { QualificacoesComponent } from './components/qualificacoes/qualificacoes.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { TypeEffectComponent } from './components/type-effect/type-effect.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SkillCardComponent } from './components/skills/skill-card/skill-card.component';
-
-
-
-
+import { QualiCardComponent } from './components/qualificacoes/quali-card/quali-card.component';
+import { ContatoComponent } from './components/contato/contato.component';
+import { FormDebugComponent } from './components/contato/form-debug/form-debug.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -33,14 +32,14 @@ import { SkillCardComponent } from './components/skills/skill-card/skill-card.co
     HomeComponent,
     ProjetosComponent,
     QualificacoesComponent,
-    ContatoComponent,
     SobreComponent,
     FooterComponent,
     TypeEffectComponent,
     SkillsComponent,
-    SkillCardComponent
-
-
+    SkillCardComponent,
+    QualiCardComponent,
+    ContatoComponent,
+    FormDebugComponent
 
   ],
   imports: [
@@ -49,8 +48,10 @@ import { SkillCardComponent } from './components/skills/skill-card/skill-card.co
     CoreModule,
     FontAwesomeModule,
     ProjetosModule,
-    BrowserAnimationsModule
-
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [],

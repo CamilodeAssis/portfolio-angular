@@ -16,7 +16,7 @@
     position: absolute;
     justify-content: center;
     width: 420px;
-    height: 260px;
+    height: 320px;
     align-items: center;
     border: 1px solid #e5455b;
     color: white;
@@ -26,23 +26,26 @@
 
   .porcent-container {
     width: 100%;
-    height: 8px;
+    height: auto;
     background-color: white;
   }
   
   .porcent {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 0;
-    height: 8px;
+    height: auto;
+    padding-right: 4px;
     background-color: #e5455b;
     transition: width 0.5s ease-in-out;
   }
 
-  .porcent-flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+  .porcent span{
+    font-size: 1em;
+    font-weight: bold;
   }
+
  
 
   .skill-container {

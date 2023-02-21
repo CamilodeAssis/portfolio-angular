@@ -6,6 +6,7 @@
     </div>
     <div class="navOptionsContainer">
       <ul>
+        <li routerLink="/home" routerLinkActive="active">Home</li>
         <li routerLink="/sobre" routerLinkActive="active">Sobre</li>
         <li routerLink="/skills" routerLinkActive="active">Skills</li>
         <li routerLink="/qualificações" routerLinkActive="active">
@@ -21,6 +22,7 @@
         <fa-icon (click)="changeClass()" class="menu-mobile" [icon]="faXmark"></fa-icon>
       </div>
       <ul>
+        <li (click)="changeClass()" routerLink="/home" routerLinkActive="active-mobile">Home</li>
         <li (click)="changeClass()"  routerLink="/sobre" routerLinkActive="active-mobile">Sobre</li>
         <li (click)="changeClass()" routerLink="/skills" routerLinkActive="active-mobile">Skills</li>
         <li (click)="changeClass()" routerLink="/qualificações" routerLinkActive="active-mobile">

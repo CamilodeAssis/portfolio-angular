@@ -1,5 +1,69 @@
-<p style="color: black;">
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias tenetur, omnis
-  dolores molestias adipisci, itaque animi obcaecati optio quasi dolorum commodi
-  ratione veritatis et aliquam, quia magnam suscipit vitae corporis?
-</p>
+<section class="section-container">
+  <div id="title" [ngClass]="{ fade: isLoaded }">
+    <h1>Entre em contato</h1>
+    <h2>Sinta-se vontade para me contatar a qualquer momento</h2>
+  </div>
+
+  <div class="barra"></div>
+  <form action="" [formGroup]="formulario" (ngSubmit)="onSubmit()" [ngClass]="{ fade: isLoaded }">
+    <div>
+      <label for="nome">Nome</label>
+      <input
+        formControlName="nome"
+        type="text"
+        id="nome"
+        placeholder="digite seu nome..."
+      />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input
+        formControlName="email"
+        type="email"
+        id="email"
+        placeholder="digite seu e-mail..."
+      />
+    </div>
+    <div>
+      <label for="mensagem">Mensagem</label>
+      <textarea
+        formControlName="mensagem"
+        type="mensagem"
+        id="mensagem"
+        placeholder="digite sua mensagem..."
+      ></textarea>
+    </div>
+    <div id="btn-container">
+      <button id="btn" type="submit">Enviar mensagem</button>
+    </div>
+  </form>
+  <div class="contato-container" [ngClass]="{ fade: isLoaded }">
+    <div class="contato-card">
+      <a href="https://wa.me/5541987323946" target="_blank">
+        <div>
+          <fa-icon [icon]="faWhatsapp"></fa-icon>
+          <h1>Whatsapp</h1>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/camilodeassis/" target="_blank">
+        <div>
+          <fa-icon [icon]="faLinkedin"></fa-icon>
+          <h1>Linkedin</h1>
+        </div>
+      </a>
+      <a href="https://github.com/CamilodeAssis" target="_blank">
+        <div>
+          <fa-icon [icon]="faGithub"></fa-icon>
+          <h1>GitHub</h1>
+        </div>
+      </a>
+      <a href="https://wa.me/5541987323946" target="_blank">
+        <div>
+          <fa-icon [icon]="faEnvelope"></fa-icon>
+          <h1>Email</h1>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- <app-form-debug [form]="formulario"></app-form-debug> -->
+</section>

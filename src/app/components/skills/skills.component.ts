@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { faLightbulb, faDatabase, faFileCode } from '@fortawesome/free-solid-svg-icons'; 
+import { faLightbulb, faDatabase, faFileCode, IconDefinition } from '@fortawesome/free-solid-svg-icons'; 
+import { Skills } from 'src/app/core/types/dataSkillsType ';
 
 import { backSkill, softSkill, frontSkill } from '../../core/data/skills';
 
@@ -9,19 +10,22 @@ import { backSkill, softSkill, frontSkill } from '../../core/data/skills';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-
+  //variavel para controlar as animações quando a rota é carregada
   isLoaded = false;
 
-  faLightbulb = faLightbulb;
-  faDatabase = faDatabase;
-  faFileCode = faFileCode;
+  // atribuindo  icones
+  faLightbulb: IconDefinition= faLightbulb;
+  faDatabase: IconDefinition = faDatabase;
+  faFileCode: IconDefinition = faFileCode;
 
-  dataBack: any = [];
-  front: any = [];
-  soft: any = [];
+  //arrays para armazenar data
+  dataBack: Skills[] = [];
+  front: Skills[] = [];
+  soft: Skills[] = [];
 
-  constructor() {  }
+  constructor() { }
 
+  //setando os arrays importados  nas variaveis e executando a animação quando a rota é carregada
   ngOnInit() {
     this.dataBack = backSkill;
     this.front = frontSkill;
@@ -30,9 +34,5 @@ export class SkillsComponent {
       this.isLoaded = true;
     }, 100);
   }
-
-  
-  
-
 
  }

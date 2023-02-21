@@ -1,31 +1,61 @@
 <section class="section-container">
-  
   <div class="home-container" [ngClass]="{ fade: isLoaded }">
     
     <div>
-      
+      <div id="icons-container" [ngClass]="{ fade: isLoaded }">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg"
+        />
+      </div>
       <h2>Olá, seja muito bem vindo(a)!</h2>
       <h1>Meu nome é Camilo</h1>
 
-      <app-type-effect class="type" ></app-type-effect>
+      <app-type-effect class="type"></app-type-effect>
 
       <div id="btn-container">
-        <button>
-          <fa-icon [icon]="faGithub"></fa-icon>
-          Github
-        </button>
-        <button>
-          <fa-icon [icon]="faLinkedin"></fa-icon>
-          Linkedin
-        </button>
-        
-        
+        <a href="https://github.com/CamilodeAssis" target="_blank">
+          <button>
+            <fa-icon [icon]="faGithub"></fa-icon>
+            Github
+          </button>
+        </a>
+        <a href="https://www.linkedin.com/in/camilodeassis/" target="_blank">
+          <button>
+            <fa-icon [icon]="faLinkedin"></fa-icon>
+            Linkedin
+          </button>
+        </a>
       </div>
-      
-      
     </div>
 
-    <img [src]="srcImg" alt="Camilo de Assis"  />
+    <img [src]="srcImg" alt="Camilo de Assis" />
 
     <div id="side-socials">
       <div class="barra" [ngClass]="{ 'slide-t-to-b': isLoaded }"></div>
@@ -36,7 +66,7 @@
       <div class="triangulo-t" [ngClass]="{ 'slide-t-to-b': isLoaded }"></div>
 
       <a href="" [ngClass]="{ 'slide-icon': isLoaded }">
-        <fa-icon [icon]="faInstagram" ></fa-icon>
+        <fa-icon [icon]="faInstagram"></fa-icon>
       </a>
       <a href="" [ngClass]="{ 'slide-icon': isLoaded }">
         <fa-icon [icon]="faFacebook"></fa-icon>
@@ -46,36 +76,5 @@
       <div class="triangulo-b" [ngClass]="{ 'slide-b-to-t': isLoaded }"></div>
     </div>
   </div>
-  <div class="icons-container" [ngClass]="{ fade: isLoaded }">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
-    />
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"
-    />
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-    />
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-    />
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
-    />
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
-    />
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
-    />
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-    />
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
-    />
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg"
-    />
-  </div>
+  <a [href]="sanitizer.bypassSecurityTrustUrl(pdfUrl)" target="_blank"><button class="btn-curriculo"> <fa-icon [icon]="faDownload"></fa-icon>  Baixar CV</button></a>
 </section>
