@@ -36,7 +36,7 @@ export const dataQuali = [
   },
   {
     name: 'Língua polonesa e matérias especializadas',
-    lugar: 'Miedzynarodowe Centrum Ksztalcenia Politechniki',
+    lugar: 'MCK',
     data: '2018',
     type: 'qualificação',
     desc: 'Fui agraciado com uma bolsa de estudos para estudar na Polônia e decidi me matricular no curso de língua polonesa oferecido pela instituição Miedzynarodowe Centrum Ksztalcenia Politechniki em Cracóvia. Ao longo do curso, aprendi a falar e a escrever em polonês, além de compreender melhor a cultura e as tradições do país. Durante o período em que estive lá, tive a oportunidade de fazer amizades com pessoas de diferentes nacionalidades e trocar experiências com colegas de turma. Foi uma experiência enriquecedora e gratificante, que me permitiu crescer tanto pessoalmente quanto profissionalmente.'
