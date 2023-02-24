@@ -230,7 +230,7 @@ p {
 
 @media (max-width: 768px){
   .section-container{
-
+      height: auto;
   }
   .home-container h2 {
     font-size: 1.5em;
@@ -300,7 +300,6 @@ p {
 @media (max-width: 1024px ){
   .section-container{
 
-    height: auto;
   }
 
   .side-text {
