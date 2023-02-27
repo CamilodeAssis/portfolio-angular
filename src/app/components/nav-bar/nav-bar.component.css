@@ -144,13 +144,7 @@ ul li.active-mobile {
   opacity: 1;
 }
 
-
-@media (max-width: 425px){
-  .navOptionsContainer img{
-    width: 20px;
-    height: 20px;
-    
-  }
+@media (max-width: 768px){
   .menu-mobile{
     display: block;
   }
@@ -158,6 +152,16 @@ ul li.active-mobile {
     display: none;
   }
 
+}
+
+
+@media (max-width: 425px){
+  .navOptionsContainer img{
+    width: 20px;
+    height: 20px;
+    
+  }
+  
   .logoC {
     font-size: 40px;
     
