@@ -67,6 +67,11 @@
 
 }
 
+@media(max-height: 800px){
+  .section-container{
+    height: 1000px;
+  }
+}
 
 @media (max-width: 1440px){
   .content-container {

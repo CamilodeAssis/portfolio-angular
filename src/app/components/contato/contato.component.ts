@@ -79,7 +79,6 @@ export class ContatoComponent {
     };
     this.http.post(url, body, { headers }).subscribe(
       (res) => {
-        console.log(res);
         this.formulario.reset();
       },
       (err) => {
