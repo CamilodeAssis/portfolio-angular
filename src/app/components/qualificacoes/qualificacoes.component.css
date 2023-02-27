@@ -50,7 +50,7 @@
 }
 
 .flex-options button {
-  positiom: relative;
+  position: relative;
   text-align: center;
   background-color: var(--btn-bg);
   padding: 10px;

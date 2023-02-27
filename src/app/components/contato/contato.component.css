@@ -128,7 +128,7 @@ form input:focus {
 }
 
 #btn:hover{
-  background-color: var(--soft-red-hover);
+  background-color: var(--btn-hover);
 }
 
 

@@ -14,6 +14,7 @@ a {
   text-decoration: none;
   color: none;
 }
+
 #btn-container {
   width: 100%;
   display: flex;
@@ -212,18 +213,9 @@ a {
   opacity: 1 !important;
 }
 
-<<<<<<< HEAD
 @media (max-width: 768px) {
   .section-container {
     height: auto;
-=======
-
-
-
-@media (max-width: 768px){
-  .section-container{
-      height: auto;
->>>>>>> 14d670c4dc9ca777858408764fd4cb0f861dd8c4
   }
   .home-container h2 {
     font-size: 1.5em;
@@ -284,16 +276,9 @@ a {
   }
 }
 
-<<<<<<< HEAD
 @media (max-width: 1024px) {
   .section-container {
     
-=======
-
-@media (max-width: 1024px ){
-  .section-container{
-
->>>>>>> 14d670c4dc9ca777858408764fd4cb0f861dd8c4
   }
 
   .side-text {
@@ -341,11 +326,8 @@ a {
     gap: 2px;
   }
 
-<<<<<<< HEAD
   #icons-container img {
     width: 28px;
     height: 28px;
   }
-=======
->>>>>>> 14d670c4dc9ca777858408764fd4cb0f861dd8c4
 }
