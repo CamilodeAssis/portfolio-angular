@@ -79,6 +79,8 @@ h3 {
   opacity: 1;
 }
 
+
+
 @media (max-width: 1024px) {
   .title-container{
     margin-bottom: 50px;
