@@ -4,9 +4,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #0f0f0f;
   padding: 60px 0 80px 0;
   gap: 40px;
+  background-color: var(--body);
 }
 
 #title {
@@ -19,12 +19,12 @@
 
 #title h1 {
   font-size: 2rem;
-  color: #e5455b;
+  color: var(--soft-red);
 }
 #title h2 {
   margin-top: 4px;
   font-size: 1rem;
-  color: #e5e7eb;
+  color: var(--text);
 }
 
 .contato-container {
@@ -50,7 +50,7 @@
   gap: 30px;
 }
 .contato-card a {
-  color: white;
+  color: var(--icon);
   text-decoration: none;
 }
 .contato-card div {
@@ -62,7 +62,7 @@
 }
 
 .contato-card div h1 {
-  color: #e5455b;
+  color: var(--soft-red);
 }
 
 fa-icon {
@@ -83,22 +83,24 @@ form {
 form label {
   font-size: 1.5em;
   margin-bottom: 4px;
-  color: #e5455b;
+  color: var(--soft-red);
 }
 
 form input {
   height: 2rem;
   border-radius: 0.25rem;
   padding: 4px;
+  background-color: var(--input-bg);
 }
 
-#mensagem {
+#message {
   padding: 4px;
   height: 10rem;
   border-radius: 0.25rem;
   resize: none;
+  background-color: var(--input-bg);
 }
-#mensagem:focus {
+#message:focus {
   outline: none;
 }
 
@@ -117,7 +119,7 @@ form input:focus {
   width: auto;
   padding: 8px;
   height: auto;
-  background-color: #e5455b;
+  background-color: var(--btn-bg);
   border-radius: 0.25rem;
   color: white;
   font-size: 1.2em;
@@ -126,7 +128,7 @@ form input:focus {
 }
 
 #btn:hover{
-  background-color: #ff667b;
+  background-color: var(--soft-red-hover);
 }
 
 

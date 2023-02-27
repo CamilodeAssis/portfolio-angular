@@ -1,10 +1,10 @@
 <section class="section-container "  >
-  <h1 id="titulo-section">{{name}}</h1>
-  <div class="flex-options">
+  <h1 id="titulo-section" [ngClass]="{ fade: isLoaded }">{{name}}</h1>
+  <div class="flex-options" [ngClass]="{ fade: isLoaded }">
     <button (click)="setIsQuali()">Qualificações</button>
     <button (click)="setIsExp()">Experiências</button>
   </div>
-  <div [ngClass]="{'triangulo-esquerda': isQuali, 'triangulo-direita': isExp}"></div>
+  <div [ngClass]="{'triangulo-esquerda': isQuali, 'triangulo-direita': isExp, 'fade': isLoaded}" ></div>
   <div class="content-container" [ngClass]="{ fade: isLoaded }">
     <div class="content">
       <app-quali-card

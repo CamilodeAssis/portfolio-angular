@@ -6,7 +6,7 @@
     width: 420px;;
     height: 50px;
     align-items: center;
-    background-color: #e5455b;
+    background-color: var(--btn-bg);
     color: white;
     cursor: pointer;
     font-size: 1.5em;
@@ -18,8 +18,8 @@
     width: 420px;
     height: 320px;
     align-items: center;
-    border: 1px solid #e5455b;
-    color: white;
+    border: 1px solid var(--btn-bg);
+    color: var(--text);
     cursor: pointer;
     padding: 10px;
   }

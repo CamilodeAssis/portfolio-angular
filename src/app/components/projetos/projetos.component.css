@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--body);
   width: 100%;
-  background-color: #0f0f0f;
   gap: 60px;
   padding: 20px 0  40px 0;
 }
@@ -18,12 +18,12 @@
 
 .title-container h1 {
   font-size: 2em;
-  color: #e5455b;
+  color:  var(--soft-red);
 }
 .title-container h2 {
   font-size: 1em;
   font-weight: normal;
-  color: #e5e7eb;
+  color: var(--text);
 }
 
 .projetos-container {
@@ -46,15 +46,16 @@
   font-size: 1em;
   font-weight: bold;
   color: white;
-  background-color: #e5455b;
+  background-color: var(--btn-bg);
   border-radius: 0.25rem;
   cursor: pointer;
+  transition: all 0.5s;
 
 }
 
 .projetos-container button:hover {
-  background-color: #FF667B;
- 
+  background-color: var(--btn-hover);
+  width: 11em;
 }
 
 .grid-container {

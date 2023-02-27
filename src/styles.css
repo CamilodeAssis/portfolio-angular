@@ -5,5 +5,27 @@
     border: 0;
     box-sizing: border-box; 
     font-family: 'Roboto', sans-serif;
-
 }
+
+
+:root{
+    --body: #0f0f0f;
+    --soft-red: #e5455b;
+    --btn-bg: #e5455b;
+    --btn-hover:#FF667B; 
+    --text: #e5e7eb;
+    --icon: white;
+    --input-bg: white;
+}
+
+:root .light-theme{
+    --body: white;
+    --btn-bg: #080808;
+    --btn-hover:#ff667b;
+    --text: #080808;
+    --icon: #080808;
+    --input-bg: #e5e7eb;
+}
+
+
+

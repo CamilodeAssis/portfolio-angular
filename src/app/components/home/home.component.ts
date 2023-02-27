@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
+
 import {
   faLinkedin,
   faGithub,
@@ -19,6 +20,9 @@ export class HomeComponent {
   //atribuindo imagem importada para renderizar no component
   srcImg: string = '/assets/images/eupbdetail.png';
 
+  //variavel para controlar o estado do tema
+  lightMode!: boolean;
+
   constructor(public sanitizer: DomSanitizer) {}
 
   pdfUrl: string = '/assets/CamilodeAssis.pdf';
@@ -32,6 +36,7 @@ export class HomeComponent {
 
   //variavel para controlar as animações quando a rota é carregada
   isLoaded = false;
+
   //executando a animação quando a rota é carregada
   ngOnInit(): void {
     setTimeout(() => {

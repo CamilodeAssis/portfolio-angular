@@ -1,15 +1,13 @@
-
-
 .section-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100%;
-  background-color: #0f0f0f;
+  height: 100vh;
   gap: 50px;
   padding: 60px 0 60px 0;
+  background-color: var(--body);
 }
 
 a {
@@ -22,9 +20,9 @@ a {
   justify-content: center;
   flex-wrap: nowrap;
   flex-direction: row;
-
 }
-#icons-container{
+
+#icons-container {
   width: 100%;
   height: 50px;
   display: flex;
@@ -33,9 +31,9 @@ a {
   align-items: center;
 }
 
-#icons-container img{
-    width: 30px;
-    height: 30px;
+#icons-container img {
+  width: 30px;
+  height: 30px;
 }
 
 .home-container {
@@ -59,14 +57,12 @@ a {
 .home-container h2 {
   font-size: 2em;
 }
-.home-container h2,
-h3,
-p {
-  color: #e5e7eb;
+.home-container h2 {
+  color: var(--text);
   text-align: center;
 }
 .home-container h1 {
-  color: #e5455b;
+  color: var(--soft-red);
   font-size: 3.5em;
 }
 
@@ -78,7 +74,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e5455b;
+  background-color: var(--btn-bg);
   width: 7.2rem;
   height: 2.2rem;
   font-size: 1em;
@@ -91,11 +87,11 @@ p {
   gap: 4px;
 }
 
-.btn-curriculo{
+.btn-curriculo {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e5455b;
+  background-color: var(--btn-bg);
   width: 15rem;
   height: 2.5rem;
   font-size: 1.5em;
@@ -104,38 +100,33 @@ p {
   padding: 10px 0 10px 0;
   cursor: pointer;
   border: none;
-
   gap: 4px;
+  transition:width 0.5s, opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1.5s;
  
 }
 
-.btn-curriculo:hover{
-  background-color: #ff667b;
+.btn-curriculo:hover {
+  background-color: var(--btn-hover);
   width: 17rem;
-
 }
 
 #btn-container button:hover {
-  background-color: #ff667b;
+  background-color: var(--btn-hover);
   width: 8rem;
-
 }
 
 .fade {
-  opacity: 1 ;
+  opacity: 1;
 }
 
-#side-socials{
+#side-socials {
   height: 100%;
   display: flex;
-  gap:10px;
+  gap: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .side-text {
@@ -148,38 +139,36 @@ p {
   opacity: 0;
   transition: all 2s;
   left: 200px;
-
 }
 
 .barra {
   width: 0.25rem;
   height: 4rem;
-  background-color: #e5455b;
+  background-color: var(--soft-red);
   opacity: 0;
   transition: opacity 1s ease-out;
   transition: transform 2s;
   transform: translateY(-300px);
-
 }
 
-.triangulo-t{
+.triangulo-t {
   width: 0;
   height: 0;
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
-  border-top: 0.5rem solid #e5455b; 
-  opacity:0;
+  border-top: 0.5rem solid var(--soft-red);
+  opacity: 0;
   transition: opacity 1s ease-out;
   transition: transform 2s;
   transform: translateY(-300px);
 }
-.triangulo-b{
+.triangulo-b {
   width: 0;
   height: 0;
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
-  border-bottom: 0.5rem solid #e5455b; 
-  opacity:0;
+  border-bottom: 0.5rem solid var(--soft-red);
+  opacity: 0;
   transition: opacity 1s ease-out;
   transition: transform 2s;
   transform: translateY(300px);
@@ -190,33 +179,31 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity:0;
+  opacity: 0;
   transition: opacity 1s ease-out;
   transition: transform 2s;
   transform: translatex(100px);
-
 }
 
-
 #side-socials fa-icon {
-  color: white;
+  color: var(--icon);
   font-size: 2rem;
   transition: all 0.5s !important;
 }
-#side-socials fa-icon:hover{
-  color: #e5455b;
+#side-socials fa-icon:hover {
+  color: var(--btn-hover);
   font-size: 2.2rem;
 }
 
-.slide-t-to-b{
+.slide-t-to-b {
   transform: translateY(0);
   opacity: 1;
 }
-.slide-b-to-t{
+.slide-b-to-t {
   transform: translateY(0);
   opacity: 1;
 }
-.slide-r-to-l{
+.slide-r-to-l {
   left: 0;
   opacity: 1;
 }
@@ -225,24 +212,20 @@ p {
   opacity: 1 !important;
 }
 
-
-
-
-@media (max-width: 768px){
-  .section-container{
-
+@media (max-width: 768px) {
+  .section-container {
+    height: auto;
   }
   .home-container h2 {
     font-size: 1.5em;
   }
-  .home-container  h3 {
+  .home-container h3 {
     font-size: 1.5em;
   }
   .home-container h1 {
-
     font-size: 2.5em;
   }
-  
+
   .home-container {
     flex-direction: column;
     justify-content: center;
@@ -258,7 +241,7 @@ p {
     transition: all 0.5s;
   }
 
-  #side-socials{
+  #side-socials {
     height: auto;
     flex-direction: row;
   }
@@ -269,38 +252,32 @@ p {
     transform: translateY(300px);
   }
 
-  .slide-t-to-b{
+  .slide-t-to-b {
     transform: translateY(0);
     opacity: 1;
   }
-  
+
   .side-text {
     transform: rotate(0deg);
     transform: translateY(50px);
-  
   }
 
-  .slide-r-to-l{
+  .slide-r-to-l {
     transform: translateY(0px);
     opacity: 1;
   }
 
-  .triangulo-t{
-      transform: rotate(-90deg);
-  
-  }
-  .triangulo-b{
+  .triangulo-t {
     transform: rotate(-90deg);
-
+  }
+  .triangulo-b {
+    transform: rotate(-90deg);
+  }
 }
-  
-}
 
-
-@media (max-width: 1024px ){
-  .section-container{
-
-    height: auto;
+@media (max-width: 1024px) {
+  .section-container {
+    
   }
 
   .side-text {
@@ -308,11 +285,10 @@ p {
     width: 80px;
     margin: 20px 0 20px 0;
   }
-  
 }
 
-@media (max-width: 425px){
-  .section-container{
+@media (max-width: 425px) {
+  .section-container {
     justify-content: flex-start;
     padding: 60px 0 60px 0;
     gap: 60px;
@@ -320,7 +296,6 @@ p {
 
   .barra {
     width: 2.5rem;
- 
   }
   .side-text {
     width: 70px;
@@ -330,7 +305,6 @@ p {
 
   #side-socials fa-icon {
     font-size: 1.5em;
-    
   }
   .home-container img {
     width: 60%;
@@ -338,25 +312,21 @@ p {
   .home-container h2 {
     font-size: 1em;
   }
-  .type{
+  .type {
     font-size: 0.5em;
   }
- 
+
   .home-container h1 {
     text-align: center;
     font-size: 2em;
   }
 
-  #icons-container{
-
+  #icons-container {
     gap: 2px;
-  
-  }
-  
-  #icons-container img{
-     width: 28px;
-     height: 28px;
-  
   }
 
+  #icons-container img {
+    width: 28px;
+    height: 28px;
+  }
 }

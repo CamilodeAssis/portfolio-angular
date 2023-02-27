@@ -7,9 +7,10 @@ import { Component, HostBinding, HostListener, Input} from '@angular/core';
 })
 export class ProjetosCardComponent {
  
-
+  
     isMouseOver: boolean = false;
 
+    //recebendo dados do component Pai
    @Input() name!: string;
    @Input() description!: string;
    @Input() img!: string;
@@ -17,16 +18,13 @@ export class ProjetosCardComponent {
    @Input() link!: string;
    @Input() type!: string;
 
-   @HostBinding('style.backgroundImage')
-   get backgroundImage() {
-     return 'url("https://www.example.com/minha-imagem.jpg")';
-   }
- 
+   
+  // escutando o evento do mouse pra aplicar um efeito no background
    @HostListener('mouseover')
    onMouseOver() {
      this.isMouseOver = true;
    }
- 
+ // escutando o evento do mouse pra aplicar um efeito no background
    @HostListener('mouseout')
    onMouseOut() {
      this.isMouseOver = false;

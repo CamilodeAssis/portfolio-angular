@@ -24,15 +24,14 @@
   font-size: 1em;
   position: absolute;
   transform: translate(420px, 20px);
-  background-color: #e5455b;
+  background-color: var(--btn-bg);
   color: white;
   cursor: pointer;
   transition: all 0.5s;
 }
 
 .quali-card button:hover {
-  background-color: #ff667b;
-  padding: 12px;
+  background-color: var(--btn-hover);
 }
 
 .detalhes-container {
@@ -50,6 +49,7 @@
   background-color: white;
   gap: 30px;
   padding: 20px;
+  border: 1px solid var(--btn-bg);
 }
 
 .detalhes-container h1 {
@@ -93,7 +93,7 @@
 }
 .info-container h3 {
   font-size: 0.8em;
-  color: #e5e7eb;
+  color: var(--text);
 }
 
 .bola {
@@ -106,7 +106,31 @@
 .barra {
   width: 4px;
   height: 55px;
-  background-color: white;
+  background-color: var(--text);
+}
+
+
+@media (max-height: 723px){
+
+  .quali-card h1 {
+    font-size:0.8em;
+  }
+  .quali-card h3 {
+    font-size:0.8em;
+  }
+
+  .bola {
+    width: 12px;
+    height: 12px;
+
+  }
+  .barra {
+    width: 2px;
+    height: 40px;
+
+  }
+
+
 }
 
 @media (max-width: 425px) {
@@ -117,7 +141,7 @@
   .quali-card button {
     padding: 4px;
     font-size: 0.8em;
-    transform: translate(220px, 55px);
+    transform: translate(220px, 40px);
   }
 
   .detalhes-container h1 {

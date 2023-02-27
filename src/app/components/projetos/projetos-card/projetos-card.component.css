@@ -55,8 +55,10 @@
   color: white;
   background-color: #e5455b;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .projeto-info button:hover {
   background-color: #ff667b;
+  padding: 8px 15px 8px 15px;
 }

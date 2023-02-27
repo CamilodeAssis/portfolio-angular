@@ -7,11 +7,12 @@
   <div class="barra"></div>
   <form action="" [formGroup]="formulario" (ngSubmit)="onSubmit()" [ngClass]="{ fade: isLoaded }">
     <div>
+      
       <label for="nome">Nome</label>
       <input
-        formControlName="nome"
+        formControlName="name"
         type="text"
-        id="nome"
+        id="name"
         placeholder="digite seu nome..."
       />
     </div>
@@ -27,12 +28,12 @@
     <div>
       <label for="mensagem">Mensagem</label>
       <textarea
-        formControlName="mensagem"
-        type="mensagem"
-        id="mensagem"
+        formControlName="message"
+        id="message"
         placeholder="digite sua mensagem..."
       ></textarea>
     </div>
+    <input type="hidden" formControlName="acessKey">
     <div id="btn-container">
       <button id="btn" type="submit">Enviar mensagem</button>
     </div>

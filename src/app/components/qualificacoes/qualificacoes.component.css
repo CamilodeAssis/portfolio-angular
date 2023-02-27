@@ -5,7 +5,7 @@
   justify-content: flex-start;
   height: 100%;
   width: 100%;
-  background-color: #0f0f0f;
+  background-color: var(--body);
   padding: 40px;
 }
 
@@ -17,6 +17,11 @@
   color: #e5455b;
   margin-top: 40px;
   margin-bottom: 40px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 2s;
+
 }
 
 .content-container {
@@ -38,11 +43,16 @@
   justify-content: space-between;
   width: 550px;
   gap: 20px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 2s;
 }
+
 .flex-options button {
   positiom: relative;
   text-align: center;
-  background-color: #e5455b;
+  background-color: var(--btn-bg);
   padding: 10px;
   border: 0;
   border-radius: 0.25rem;
@@ -61,7 +71,7 @@ app-quali-card {
   height: auto;
   width: 550px;
   gap: 20px;
-  border: 1px solid #e5455b;
+  border: 1px solid var(--btn-bg);
   border-radius: 0.25rem;
   padding: 10px;
 }
@@ -79,8 +89,12 @@ app-quali-card {
   height: 0;
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
-  border-top: 0.5rem solid #e5455b;
+  border-top: 0.5rem solid var(--btn-bg);
   translate: 260px 0px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 2s;
 }
 
 .triangulo-esquerda {
@@ -89,14 +103,18 @@ app-quali-card {
   height: 0;
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
-  border-top: 0.5rem solid #e5455b;
+  border-top: 0.5rem solid var(--btn-bg);
   translate: -260px 0px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 2s;
 }
 
 
 
 .fade {
-  opacity: 1;
+  opacity: 1!important;
 }
 
 @media (max-width: 425px) {

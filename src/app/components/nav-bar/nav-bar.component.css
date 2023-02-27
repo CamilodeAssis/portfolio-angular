@@ -8,6 +8,17 @@
   color: #e5e7eb;
 }
 
+.navOptionsContainer img{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.navOptionsContainer img:hover{
+  shadow: rgba(255, 255, 255, 1);
+}
+
+
 .NavBar {
   display: flex;
   width: 80%;
@@ -59,10 +70,18 @@ ul li.active-mobile {
  
   
 }
+.navOptionsContainer{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  gap: 40px;
+}
 
 .navOptionsContainer ul {
   display: flex;
   justify-content: space-between;
+
   align-items: center;
   gap: 16px;
   font-weight: bold;
@@ -76,7 +95,7 @@ ul li.active-mobile {
 
 .menu-mobile{
   display: none;
-  font-size: 2em;
+  font-size: 1.9em;
 }
 
 .menu-hidden {
@@ -127,6 +146,11 @@ ul li.active-mobile {
 
 
 @media (max-width: 425px){
+  .navOptionsContainer img{
+    width: 20px;
+    height: 20px;
+    
+  }
   .menu-mobile{
     display: block;
   }

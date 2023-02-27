@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./sobre.component.css'],
 })
 export class SobreComponent {
+  // atribuindo imagem a variavel
   imgSrc: string = '/assets/images/eu1.png';
 
+  //variavel para controlar as animações quando a rota é carregada
   isLoaded = false;
 
   ngOnInit(): void {

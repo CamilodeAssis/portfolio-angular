@@ -1,7 +1,7 @@
 p {
   font-family: monospace;
   font-size: 2em;
-  color: #e5e7eb;
+  color: var(--text);
 }
 
 p span {

@@ -6,13 +6,13 @@
   height: 100vh;
   width: 100%;
   gap: 100px;
-  background-color: #0f0f0f;
+  background-color: var(--body);
   padding-top: 100px;
 }
 
 .section-container h1 {
   margin-bottom: 100px;
-  color: #e5455b;
+  color: var(--soft-red);
   font-size: 2.5rem;
   text-align: center;
  

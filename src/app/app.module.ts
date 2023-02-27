@@ -26,6 +26,7 @@ import { PaginaNaoEncontradaComponent } from './components/pagina-nao-encontrada
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,7 @@ import { PaginaNaoEncontradaComponent } from './components/pagina-nao-encontrada
     QualiCardComponent,
     ContatoComponent,
     FormDebugComponent,
-    PaginaNaoEncontradaComponent
+    PaginaNaoEncontradaComponent,
 
   ],
   imports: [

@@ -4,32 +4,80 @@
       <span class="logoC">C</span>
       <span class="logoA">A</span>
     </div>
+
     <div class="navOptionsContainer">
+      
+        <img (click)="toggleTheme.emit()" *ngIf="!isLightTheme" [src]="sun" alt="">
+        <img (click)="toggleTheme.emit()" *ngIf="isLightTheme"  [src]="moon" alt="">
+      
       <ul>
         <li routerLink="/home" routerLinkActive="active">Home</li>
         <li routerLink="/sobre" routerLinkActive="active">Sobre</li>
         <li routerLink="/skills" routerLinkActive="active">Skills</li>
-        <li routerLink="/qualificações" routerLinkActive="active">
+        <li routerLink="/qualificaçoes" routerLinkActive="active">
           Qualificações
         </li>
         <li routerLink="/projetos" routerLinkActive="active">Projetos</li>
         <li routerLink="/contato" routerLinkActive="active">Contato</li>
       </ul>
     </div>
-    <fa-icon (click)="changeClass()" class="menu-mobile" [icon]="faBars"></fa-icon>
-    <div class="menu-hidden" [ngClass]="{'menu-visible': isMenuVisible}">
+
+    <fa-icon
+      (click)="changeClass()"
+      class="menu-mobile"
+      [icon]="faBars"
+    ></fa-icon>
+    <div class="menu-hidden" [ngClass]="{ 'menu-visible': isMenuVisible }">
       <div class="mobile-close">
-        <fa-icon (click)="changeClass()" class="menu-mobile" [icon]="faXmark"></fa-icon>
+        <fa-icon
+          (click)="changeClass()"
+          class="menu-mobile"
+          [icon]="faXmark"
+        ></fa-icon>
       </div>
       <ul>
-        <li (click)="changeClass()" routerLink="/home" routerLinkActive="active-mobile">Home</li>
-        <li (click)="changeClass()"  routerLink="/sobre" routerLinkActive="active-mobile">Sobre</li>
-        <li (click)="changeClass()" routerLink="/skills" routerLinkActive="active-mobile">Skills</li>
-        <li (click)="changeClass()" routerLink="/qualificações" routerLinkActive="active-mobile">
+        <li
+          (click)="changeClass()"
+          routerLink="/home"
+          routerLinkActive="active-mobile"
+        >
+          Home
+        </li>
+        <li
+          (click)="changeClass()"
+          routerLink="/sobre"
+          routerLinkActive="active-mobile"
+        >
+          Sobre
+        </li>
+        <li
+          (click)="changeClass()"
+          routerLink="/skills"
+          routerLinkActive="active-mobile"
+        >
+          Skills
+        </li>
+        <li
+          (click)="changeClass()"
+          routerLink="/qualificações"
+          routerLinkActive="active-mobile"
+        >
           Qualificações
         </li>
-        <li (click)="changeClass()" routerLink="/projetos" routerLinkActive="active-mobile">Projetos</li>
-        <li (click)="changeClass()" routerLink="/contato" routerLinkActive="active-mobile">Contato</li>
+        <li
+          (click)="changeClass()"
+          routerLink="/projetos"
+          routerLinkActive="active-mobile"
+        >
+          Projetos
+        </li>
+        <li
+          (click)="changeClass()"
+          routerLink="/contato"
+          routerLinkActive="active-mobile"
+        >
+          Contato
+        </li>
       </ul>
     </div>
   </nav>
