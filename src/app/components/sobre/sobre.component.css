@@ -6,7 +6,7 @@
   align-items: center;
   width: 100%;
   background-color: var(--body);
-  padding: 100px 0 100px 0;
+  padding: 200px 0 200px 0;
 
 }
 
@@ -81,6 +81,7 @@ h3 {
 
 
 
+
 @media (max-width: 1024px) {
   .title-container{
     margin-bottom: 50px;
@@ -102,12 +103,7 @@ h3 {
 }
 
 
-@media (max-width: 1024px){
-  .section-container {
-    height:auto;
-    
-  }
-}
+
 
 @media (max-width: 768px){
 
