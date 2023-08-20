@@ -10,6 +10,7 @@ export class TypeEffectComponent {
   textArray: string[] = [
     `Desenvolvedor Web ${" "} ${" "}${" "}${" "} ${" "}${" "}${" "}${" "}`,
     `Apaixonado por Técnologia${" "} ${" "}${" "}${" "} ${" "}${" "}${" "}${" "}`,
+    `Desenvolvedor Front-End${" "} ${" "}${" "}${" "} ${" "}${" "}${" "}${" "}`,
   ];
   currentText = '';
   textIndex = 0;
