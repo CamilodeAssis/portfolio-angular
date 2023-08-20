@@ -9,7 +9,6 @@ export class TypeEffectComponent {
   //matriz de string a ser iterada
   textArray: string[] = [
     `Desenvolvedor Web ${" "} ${" "}${" "}${" "} ${" "}${" "}${" "}${" "}`,
-    `Desenvolvedor FullStack ${" "} ${" "}${" "}${" "} ${" "}${" "}${" "}${" "}`,
     `Apaixonado por Técnologia${" "} ${" "}${" "}${" "} ${" "}${" "}${" "}${" "}`,
   ];
   currentText = '';
