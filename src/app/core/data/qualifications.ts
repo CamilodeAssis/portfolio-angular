@@ -52,6 +52,13 @@ export const dataQuali = [
 
 export const dataExp = [
   {
+    name: 'Desenvolvedor Front-end',
+    lugar: 'ENACOM Group',
+    data: 'mar/2023 - O momento',
+    type: 'experiência',
+    desc: 'Atualmente, atuo como Desenvolvedor Front-end especializado em Angular, com uma ênfase significativa em otimizar processos para a indústria 4.0. Minha jornada profissional se desenrola em um ambiente ágil, onde metodologias como Scrum e Kanban orquestram nosso fluxo de trabalho de maneira eficiente. Minha rotina envolve a colaboração estreita com equipes multidisciplinares, onde compartilhamos conhecimentos e habilidades para entregar soluções inovadoras. Utilizando o Azure DevOps como nossa plataforma central de gerenciamento, coordenamos o desenvolvimento, integração e implantação contínuos de nossos projetos.'
+  },
+  {
     name: 'Monitor de qualidade',
     lugar: 'CNH Industrial',
     data: 'jan/2022 - out/2022',

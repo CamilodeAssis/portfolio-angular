@@ -1,22 +1,22 @@
 export const backSkill = [
   {
     name: 'NodeJs',
-    porcent: '75%',
+    porcent: '65%',
     type: 'back',
   },
   {
     name: 'Express',
-    porcent: '70%',
-    type: 'back',
-  },
-  {
-    name: 'Sequelize',
     porcent: '60%',
     type: 'back',
   },
   {
+    name: 'Sequelize',
+    porcent: '40%',
+    type: 'back',
+  },
+  {
     name: 'MySQL',
-    porcent: '65%',
+    porcent: '55%',
     type: 'back',
   },
   
@@ -25,38 +25,53 @@ export const backSkill = [
 export const frontSkill = [
   {
     name: 'HTML',
-    porcent: '90%',
+    porcent: '95%',
     type: 'front',
   },
   {
     name: 'CSS',
-    porcent: '85%',
+    porcent: '95%',
     type: 'front',
   },
   {
     name: 'Javascript',
-    porcent: '85%',
+    porcent: '90%',
     type: 'front',
   },
 
   {
     name: 'ReactJs',
-    porcent: '80%',
+    porcent: '60%',
     type: 'front',
   },
   {
     name: 'Angular',
-    porcent: '40%',
+    porcent: '90%',
     type: 'front',
   },
   {
     name: 'TailwindCss',
-    porcent: '85%',
+    porcent: '70%',
     type: 'front',
   },
+  {
+    name: 'Typescript',
+    porcent: '80%',
+    type: 'front',
+  }
 ]
 
 export const softSkill = [
+  {
+    name: 'DevOps',
+    porcent: '90%',
+    type: 'soft',
+  },
+  {
+    name: 'Scrum & Kanban',
+    porcent: '90%',
+    type: 'soft',
+  },
   {
     name: 'Trabalho em equipe',
     porcent: '100%',
